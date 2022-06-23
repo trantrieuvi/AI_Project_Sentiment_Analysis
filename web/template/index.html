@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 220px; 
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 1px solid #fff;
+  padding: 20px;
+  background-color: #E1F2FB
+}
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 12px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #F9D923;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+    <div style="font-family:Tahoma; font-size: 22px; text-align: center;color: red;"><b>DỰ ÁN CUỐI KÌ MÔN HỌC TRÍ TUỆ NHÂN TẠO - HCMUTE</b> </div>
+    <div style="height: 10px;"></div>
+    <div style="font-family:Tahoma; font-size: 15px; text-align: center; height: 40px"><i><b>Đề tài: Phân tích cảm xúc đánh giá khách hàng về sản phẩm điện thoại thông minh</b></i></div>
+    <div class="row" style="font-family:Tahoma; font-size: 12px;">
+
+    <div class="row" style="font-family:Tahoma; font-size: 12px;">
+        <div class="column1">
+          <div style="height: 20px; text-align: right;">Giảng viên hướng dẫn:</div>
+          <div style="height: 20px; text-align: right;">Sinh viên thực hiện:</div>
+          <div style="height: 20px; text-align: right;">MSSV - Lớp:</div>
+        </div>
+        <div class="column1">
+          <div style="height: 20px"><b>PGS.TS Nguyễn Trường Thịnh</b></div>
+          <div style="height: 20px"><b>Trần Triệu Vĩ</b></div>
+          <div style="height: 20px"><b>19146301 - 05CLC</b></div>
+        </div>
+    </div>
+
+
+    <div class="row" style="font-family:Tahoma;">
+        <div class="column">
+            <div style="text-align: center; font-size: 15px;"><b>Nhập đánh giá</b></div>
+            <div style="vertical-align: middle;">
+                <form action="/result" method="POST">
+                    <div style="height: 20px"></div>
+                    <div style="text-align: justify; font-size: 12px">Nhập đánh giá của bạn vào ô bên dưới:</div>
+                    <div style="height: 10px"></div>
+                    <input type="text" placeholder="Đánh giá..." id="cmt" name="cmt">
+                    
+                    <div style="height: 68px"></div>
+                    <div style="align-items: center;">
+                        <button class="button" type="submit" value="Submit" style="vertical-align:middle; ">
+                            <span>
+                                <b>Kiểm tra kết quả</b>
+                            </span>
+                        </button>  
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div style="text-align: center; font-family:Tahoma; font-size: 15px;"><b>Cảm xúc đánh giá</b></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
